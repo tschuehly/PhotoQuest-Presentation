@@ -28,12 +28,12 @@
             /* Typography — MUST use clamp() */
             --font-display: 'Cormorant Garamond', serif;
             --font-body: 'Source Serif 4', serif;
-            --title-size: clamp(2rem, 6vw, 5rem);
-            --h2-size: clamp(1.5rem, 4vw, 3rem);
-            --h3-size: clamp(1rem, 2.5vw, 1.5rem);
-            --subtitle-size: clamp(0.875rem, 1.5vw, 1.15rem);
-            --body-size: clamp(0.75rem, 1.3vw, 1.05rem);
-            --small-size: clamp(0.6rem, 0.9vw, 0.8rem);
+            --title-size: clamp(2.5rem, 7vw, 5.5rem);
+            --h2-size: clamp(1.8rem, 4.5vw, 3.5rem);
+            --h3-size: clamp(1.2rem, 3vw, 1.8rem);
+            --subtitle-size: clamp(1rem, 1.8vw, 1.4rem);
+            --body-size: clamp(0.9rem, 1.5vw, 1.25rem);
+            --small-size: clamp(0.7rem, 1.1vw, 0.95rem);
 
             /* Spacing — MUST use clamp() */
             --slide-padding: clamp(1.5rem, 5vw, 5rem);
@@ -85,8 +85,8 @@
         }
 
         .card, .container, .content-box {
-            max-width: min(90vw, 1000px);
-            max-height: min(80vh, 700px);
+            max-width: min(95vw, 1200px);
+            max-height: min(85vh, 750px);
         }
 
         .feature-list, .bullet-list {
@@ -106,7 +106,7 @@
 
         img, .image-container {
             max-width: 100%;
-            max-height: min(50vh, 400px);
+            max-height: min(70vh, 600px);
             object-fit: contain;
         }
 
@@ -237,8 +237,8 @@
         .slide-inner {
             position: relative;
             z-index: 1;
-            max-width: min(85vw, 900px);
-            max-height: min(75vh, 600px);
+            max-width: min(92vw, 1200px);
+            max-height: min(80vh, 700px);
             width: 100%;
             display: flex;
             flex-direction: column;
@@ -311,20 +311,20 @@
         /* === FEATURE CARDS === */
         .card-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(min(100%, clamp(180px, 20vw, 260px)), 1fr));
-            gap: clamp(0.75rem, 1.5vw, 1.25rem);
+            grid-template-columns: repeat(auto-fit, minmax(min(100%, clamp(220px, 25vw, 320px)), 1fr));
+            gap: clamp(1rem, 2vw, 2rem);
         }
 
         .feature-card {
             background: var(--bg-warm);
-            border-radius: clamp(4px, 0.5vw, 8px);
-            padding: clamp(1rem, 2.5vw, 2rem);
-            border-left: 3px solid var(--accent);
+            border-radius: clamp(6px, 0.7vw, 12px);
+            padding: clamp(1.5rem, 3.5vw, 3rem);
+            border-left: 4px solid var(--accent);
         }
 
         .feature-card h3 {
-            font-size: clamp(1rem, 1.6vw, 1.3rem);
-            margin-bottom: clamp(0.25rem, 0.6vh, 0.6rem);
+            font-size: clamp(1.3rem, 2.2vw, 1.8rem);
+            margin-bottom: clamp(0.4rem, 1vh, 1rem);
         }
 
         .feature-card p {
@@ -457,7 +457,7 @@
         /* === SLIDE IMAGES === */
         .slide-image {
             max-width: 100%;
-            max-height: min(50vh, 400px);
+            max-height: min(65vh, 550px);
             object-fit: contain;
             border-radius: clamp(4px, 0.5vw, 8px);
         }
@@ -482,9 +482,9 @@
         }
 
         .image-pair .slide-image {
-            max-height: min(45vh, 380px);
+            max-height: min(55vh, 480px);
             flex: 1;
-            min-width: min(40%, 250px);
+            min-width: min(40%, 300px);
         }
 
         .image-pair .arrow {
@@ -504,7 +504,7 @@
         }
 
         .product-images .slide-image {
-            max-height: min(20vh, 150px);
+            max-height: min(30vh, 250px);
             border-radius: clamp(4px, 0.4vw, 6px);
             box-shadow: 0 2px 8px rgba(61, 53, 51, 0.1);
         }
@@ -531,7 +531,7 @@
         }
 
         .two-col-image .slide-image {
-            max-height: min(45vh, 350px);
+            max-height: min(60vh, 500px);
             width: 100%;
             object-fit: cover;
         }
@@ -756,8 +756,8 @@
                     </p>
                     <div class="stat-row" style="justify-content: flex-start; gap: clamp(0.75rem, 2vw, 2rem);">
                         <div class="stat" style="text-align: left;">
-                            <div class="stat-value">27</div>
-                            <div class="stat-label">Monate am Markt</div>
+                            <div class="stat-value">2+</div>
+                            <div class="stat-label">Jahre am Markt</div>
                         </div>
                         <div class="stat" style="text-align: left;">
                             <div class="stat-value">400+</div>
@@ -775,44 +775,12 @@
     </section>
 
     <!-- ========================================
-         SLIDE 3: DAS TEAM
-         ======================================== -->
-    <section class="slide" data-title="Team">
-        <div class="rule-top reveal-rule"></div>
-        <div class="rule-bottom reveal-rule from-right"></div>
-        <span class="slide-number reveal">03</span>
-
-        <div class="slide-inner centered">
-            <div class="overline reveal">Das Team</div>
-            <h2 class="reveal reveal-d1">Wer steckt hinter PhotoQuest?</h2>
-            <div class="divider centered reveal reveal-d2"></div>
-            <div class="two-col reveal reveal-d3" style="margin-top: var(--content-gap); text-align: center; max-width: min(85vw, 800px);">
-                <div class="feature-card" style="border-left: none; border-top: 3px solid var(--accent); display: flex; flex-direction: column; align-items: center;">
-                    <img src="assets/thomas.png" alt="Thomas Schilling" style="width: clamp(80px, 12vw, 130px); height: clamp(80px, 12vw, 130px); border-radius: 50%; object-fit: cover; margin-bottom: var(--element-gap); border: 3px solid var(--accent-light);">
-                    <h3>Thomas Schilling</h3>
-                    <p style="color: var(--accent-deep); font-weight: 600; margin-bottom: var(--element-gap);">Gründer — Technik & Produkt</p>
-                    <p>Softwareentwickler & Freelancer aus Stuttgart. Baut die komplette PhotoQuest-Plattform. Conference Speaker bei Spring I/O, Devoxx und JavaZone.</p>
-                </div>
-                <div class="feature-card" style="border-left: none; border-top: 3px solid var(--accent); display: flex; flex-direction: column; align-items: center;">
-                    <img src="assets/jana.png" alt="Jana" style="width: clamp(80px, 12vw, 130px); height: clamp(80px, 12vw, 130px); border-radius: 50%; object-fit: cover; margin-bottom: var(--element-gap); border: 3px solid var(--accent-light);">
-                    <h3>Jana Oetllin</h3>
-                    <p style="color: var(--accent-deep); font-weight: 600; margin-bottom: var(--element-gap);">Cofounderin — Marketing</p>
-                    <p>Betreibt @jana.hochzeitsideen (1.200+ Follower, 27K+ Likes auf TikTok) und HeartWerk. Bringt Branchenwissen und direkte Zielgruppen-Nähe ein.</p>
-                </div>
-            </div>
-            <p class="reveal reveal-d4" style="font-size: var(--small-size); color: var(--text-muted); margin-top: var(--content-gap);">
-                Bootstrap-Unternehmen · 2-Personen-Team · Eure direkten Ansprechpartner im Projekt
-            </p>
-        </div>
-    </section>
-
-    <!-- ========================================
-         SLIDE 4: DAS PROBLEM
+         SLIDE 3: DAS PROBLEM
          ======================================== -->
     <section class="slide" data-title="Das Problem">
         <div class="rule-top reveal-rule"></div>
         <div class="rule-bottom reveal-rule from-right"></div>
-        <span class="slide-number reveal">04</span>
+        <span class="slide-number reveal">03</span>
 
         <div class="slide-inner">
             <div class="overline reveal">Ausgangssituation</div>
@@ -847,7 +815,7 @@
     <section class="slide" data-title="Funktionsweise">
         <div class="rule-top reveal-rule"></div>
         <div class="rule-bottom reveal-rule from-right"></div>
-        <span class="slide-number reveal">05</span>
+        <span class="slide-number reveal">04</span>
 
         <div class="slide-inner centered">
             <div class="overline reveal">In drei Schritten</div>
@@ -876,7 +844,7 @@
     <section class="slide" data-title="Praxis">
         <div class="rule-top reveal-rule"></div>
         <div class="rule-bottom reveal-rule from-right"></div>
-        <span class="slide-number reveal">06</span>
+        <span class="slide-number reveal">05</span>
 
         <div class="slide-inner centered">
             <div class="overline reveal">So sieht das in der Praxis aus</div>
@@ -896,15 +864,15 @@
     <section class="slide" data-title="Produkte">
         <div class="rule-top reveal-rule"></div>
         <div class="rule-bottom reveal-rule from-right"></div>
-        <span class="slide-number reveal">07</span>
+        <span class="slide-number reveal">06</span>
 
-        <div class="slide-inner">
+        <div class="slide-inner" style="justify-content: flex-start; padding-top: clamp(1.5rem, 3vh, 2.5rem); gap: clamp(0.25rem, 0.5vh, 0.5rem);">
             <div class="overline reveal">Zwei Produktlinien</div>
-            <h2 class="reveal reveal-d1">PhotoSafari & PhotoQuest</h2>
+            <h2 class="reveal reveal-d1" style="margin-bottom: 0;">PhotoSafari & PhotoQuest</h2>
             <div class="divider reveal reveal-d2"></div>
-            <div class="two-col reveal reveal-d3" style="margin-top: var(--element-gap);">
+            <div class="two-col reveal reveal-d3" style="margin-top: 0; gap: clamp(1rem, 2vw, 2rem);">
                 <div>
-                    <div class="feature-card" style="border-left-color: var(--accent-light);">
+                    <div class="feature-card" style="border-left-color: var(--accent-light); padding: clamp(0.75rem, 2vw, 1.25rem);">
                         <h3>PhotoSafari</h3>
                         <p style="font-style: italic; margin-bottom: var(--element-gap);">„Eure Gäste knipsen, ihr sammelt"</p>
                         <ul class="clean-list">
@@ -913,10 +881,10 @@
                             <li>Digital ab 29€ / Gedruckt ab 69€</li>
                         </ul>
                     </div>
-                    <img src="assets/safari_in_action.webp" alt="PhotoSafari Karte auf Hochzeitstisch" class="slide-image rounded" style="margin-top: var(--element-gap); height: min(32vh, 260px); width: 100%; object-fit: cover; aspect-ratio: 1 / 1;">
+                    <img src="assets/safari_in_action.webp" alt="PhotoSafari Karte auf Hochzeitstisch" class="slide-image rounded" style="margin-top: var(--element-gap); height: min(40vh, 350px); width: 100%; object-fit: cover; aspect-ratio: 1 / 1;">
                 </div>
                 <div>
-                    <div class="feature-card">
+                    <div class="feature-card" style="padding: clamp(0.75rem, 2vw, 1.25rem);">
                         <h3>PhotoQuest</h3>
                         <p style="font-style: italic; margin-bottom: var(--element-gap);">„Persönliche Fotoaufgaben für jeden Gast"</p>
                         <ul class="clean-list">
@@ -925,14 +893,46 @@
                             <li>Ab 99€ inkl. PhotoSafari & Versand</li>
                         </ul>
                     </div>
-                    <img src="assets/quest_in_action.webp" alt="PhotoQuest Aufgabenkarte auf Tisch" class="slide-image rounded" style="margin-top: var(--element-gap); height: min(32vh, 260px); width: 100%; object-fit: cover; aspect-ratio: 1 / 1;">
+                    <img src="assets/quest_in_action.webp" alt="PhotoQuest Aufgabenkarte auf Tisch" class="slide-image rounded" style="margin-top: var(--element-gap); height: min(40vh, 350px); width: 100%; object-fit: cover; aspect-ratio: 1 / 1;">
                 </div>
             </div>
         </div>
     </section>
 
     <!-- ========================================
-         SLIDE 6: USPs
+         SLIDE 7: DAS TEAM
+         ======================================== -->
+    <section class="slide" data-title="Team">
+        <div class="rule-top reveal-rule"></div>
+        <div class="rule-bottom reveal-rule from-right"></div>
+        <span class="slide-number reveal">07</span>
+
+        <div class="slide-inner centered">
+            <div class="overline reveal">Das Team</div>
+            <h2 class="reveal reveal-d1">Wer steckt hinter PhotoQuest?</h2>
+            <div class="divider centered reveal reveal-d2"></div>
+            <div class="two-col reveal reveal-d3" style="margin-top: var(--content-gap); text-align: center; max-width: min(92vw, 1100px);">
+                <div class="feature-card" style="border-left: none; border-top: 4px solid var(--accent); display: flex; flex-direction: column; align-items: center;">
+                    <img src="assets/thomas.png" alt="Thomas Schilling" style="width: clamp(80px, 12vw, 130px); height: clamp(80px, 12vw, 130px); border-radius: 50%; object-fit: cover; margin-bottom: var(--element-gap); border: 3px solid var(--accent-light);">
+                    <h3>Thomas Schilling</h3>
+                    <p style="color: var(--accent-deep); font-weight: 600; margin-bottom: var(--element-gap);">Gründer — Technik & Produkt</p>
+                    <p>Softwareentwickler & Freelancer aus Stuttgart. Baut die komplette PhotoQuest-Plattform. Conference Speaker bei Spring I/O, Devoxx und JavaZone.</p>
+                </div>
+                <div class="feature-card" style="border-left: none; border-top: 4px solid var(--accent); display: flex; flex-direction: column; align-items: center;">
+                    <img src="assets/jana.png" alt="Jana" style="width: clamp(80px, 12vw, 130px); height: clamp(80px, 12vw, 130px); border-radius: 50%; object-fit: cover; margin-bottom: var(--element-gap); border: 3px solid var(--accent-light);">
+                    <h3>Jana Oettlin</h3>
+                    <p style="color: var(--accent-deep); font-weight: 600; margin-bottom: var(--element-gap);">Cofounderin — Marketing</p>
+                    <p>Betreibt @jana.hochzeitsideen (1.200+ Follower, 27K+ Likes auf TikTok) und HeartWerk. Bringt Branchenwissen und direkte Zielgruppen-Nähe ein.</p>
+                </div>
+            </div>
+            <p class="reveal reveal-d4" style="font-size: var(--small-size); color: var(--text-muted); margin-top: var(--content-gap);">
+                Bootstrap-Unternehmen · 2-Personen-Team · Eure direkten Ansprechpartner im Projekt
+            </p>
+        </div>
+    </section>
+
+    <!-- ========================================
+         SLIDE 8: USPs
          ======================================== -->
     <section class="slide" data-title="Differenzierung">
         <div class="rule-top reveal-rule"></div>
@@ -1189,9 +1189,6 @@
             <div class="divider centered reveal reveal-d3"></div>
             <p class="cta-text reveal reveal-d4">
                 Wir freuen uns auf die Zusammenarbeit.
-            </p>
-            <p class="reveal reveal-d5" style="font-size: var(--small-size); color: var(--text-muted); margin-top: var(--content-gap);">
-                Keine Programmierkenntnisse erforderlich &middot; Alle KI-Tools haben grafische Oberflächen &middot; Fokus auf Marketing-Strategie & Prozessdesign
             </p>
         </div>
     </section>
